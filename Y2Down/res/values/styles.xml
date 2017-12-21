@@ -1,0 +1,31 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg</item>
+    </style>
+
+    <declare-styleable name="ProcessButton">
+        <attr name="progressText" format="string" />
+        <attr name="completeText" format="string" />
+        <attr name="colorProgress" format="color" />
+        <attr name="colorComplete" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FlatButton">
+        <attr name="colorPressed" format="color" />
+        <attr name="colorNormal" format="color" />
+    </declare-styleable>
+
+    <style name="popupwindow_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ds_text_size_big</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">@dimen/ds_5</item>
+        <item name="android:background">@drawable/popwindow_item_selector</item>
+        <item name="android:textColor">@color/text_col</item>
+    </style>
+
+</resources>

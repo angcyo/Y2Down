@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/ds_popup_item_width"
+    android:layout_height="wrap_content"
+    android:background="@color/tran_3"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tx_item_add"
+        style="@style/popupwindow_item_style"
+        android:text="添加url" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tran_3" />
+
+    <TextView
+        android:id="@+id/tx_item_del"
+        style="@style/popupwindow_item_style"
+        android:text="删除文件" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tran_3" />
+
+    <TextView
+        android:id="@+id/tx_item_about"
+        style="@style/popupwindow_item_style"
+        android:text="关于APP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tran_3" />
+
+    <TextView
+        android:id="@+id/tx_item_exit"
+        style="@style/popupwindow_item_style"
+        android:text="完全退出" />
+
+</LinearLayout>

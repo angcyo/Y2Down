@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.angcyo.view.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/down_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:rb_color="@color/theme_col"
+    app:rb_duration="3000"
+    app:rb_radius="60dp"
+    app:rb_rippleAmount="8"
+    app:rb_scale="6" >
+
+    <RelativeLayout
+        android:id="@+id/down_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/layout_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_head" />
+
+        <com.angcyo.view.MainListView
+            android:id="@+id/list_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_head"
+            android:divider="@null" >
+        </com.angcyo.view.MainListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_notify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+</com.angcyo.view.RippleBackground>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ds_3"
+    android:background="@drawable/list_item_bg_shape" >
+
+    <LinearLayout
+        android:id="@+id/lay_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ds_list_item_height_normal"
+        android:background="@drawable/list_item_bg_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.meg7.widget.CircleImageView
+            android:id="@+id/img_apk_ico"
+            android:layout_width="@dimen/ds_ico_width"
+            android:layout_height="@dimen/ds_ico_height"
+            android:layout_margin="@dimen/ds_5"
+            android:scaleType="centerInside"
+            android:src="@drawable/ico48" />
+
+        <TextView
+            android:id="@+id/tx_apk_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="angcyo"
+            android:textColor="@color/text_col"
+            android:textSize="@dimen/ds_text_size_2" />
+
+        <TextView
+            android:id="@+id/tx_apk_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="angcyo"
+            android:textColor="@color/text_col_dark"
+            android:textSize="@dimen/ds_text_size_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/str_apk_size"
+            android:textColor="@color/text_col"
+            android:textSize="@dimen/ds_text_size_2" />
+
+        <TextView
+            android:id="@+id/tx_apk_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="2.29MB"
+            android:textColor="@color/text_col_dark"
+            android:textSize="@dimen/ds_text_size_1" />
+
+        <com.angcyo.view.GenerateProcessButton
+            android:id="@+id/bt_main"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/bt_text_col"
+            android:textSize="@dimen/ds_bttxsize_download"
+            custom:completeText="安装中..."
+            custom:progressText="正在下载" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_item_ex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/theme_col" />
+
+        <TextView
+            android:id="@+id/tx_apk_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:minHeight="20dp"
+            android:padding="@dimen/ds_5"
+            android:singleLine="false"
+            android:text="更多的描述"
+            android:textColor="@color/text_col"
+            android:textSize="@dimen/ds_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ds_5"
+            android:singleLine="true"
+            android:text="更新时间:"
+            android:textColor="@color/text_col_dark" />
+
+        <TextView
+            android:id="@+id/tx_apk_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="2011-14-14"
+            android:textColor="@color/text_col_dark" />
+    </LinearLayout>
+
+</RelativeLayout>

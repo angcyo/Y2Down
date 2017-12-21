@@ -1,0 +1,28 @@
+<resources>
+
+    <dimen name="ds_list_item_height_normal">60dp</dimen>
+    <dimen name="ds_list_item_height_ex">120dp</dimen>
+    <dimen name="ds_ico_width">48dp</dimen>
+    <dimen name="ds_ico_height">48dp</dimen>
+    <dimen name="ds_head_height">40dp</dimen>
+    <dimen name="ds_head_ico_width">32dp</dimen>
+    <dimen name="ds_head_ico_height">32dp</dimen>
+    <dimen name="ds_text_size">14sp</dimen>
+    <dimen name="ds_text_size_1">12sp</dimen>
+    <dimen name="ds_text_size_2">16sp</dimen>
+    <dimen name="ds_text_size_big">20sp</dimen>
+    <dimen name="ds_bttxsize_download">14sp</dimen>
+    <dimen name="ds_3">3dp</dimen>
+    <dimen name="ds_5">5dp</dimen>
+    <dimen name="ds_10">10dp</dimen>
+    <dimen name="ds_20">20dp</dimen>
+    <dimen name="ds_popup_item_width">120dp</dimen>
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    
+    <!-- SweetAlertDialog -->
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <!-- SweetAlertDialog end-->
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tran_5"
+    android:orientation="vertical"
+    android:padding="@dimen/ds_5" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tran_4"
+        android:padding="@dimen/ds_5" >
+
+        <EditText
+            android:id="@+id/et_addurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_selector"
+            android:focusable="true"
+            android:maxLength="255"
+            android:paddingRight="40dp"
+            android:singleLine="true"
+            android:textColor="@color/text_col"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/ds_text_size_big" />
+
+        <Button
+            android:id="@+id/bt_addurl"
+            android:layout_width="40dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/popwindow_item_selector"
+            android:text="添加"
+            android:textColor="@color/text_col"
+            android:textSize="@dimen/ds_text_size_big" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/ds_5"
+        android:layout_marginTop="@dimen/ds_5"
+        android:background="@color/theme_col" />
+
+    <ListView
+        android:id="@+id/list_addurl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" >
+    </ListView>
+
+</LinearLayout>
